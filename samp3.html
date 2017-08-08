@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h2>Basic Model Examples</h2>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+<div class="modal fade" id="myModal" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">close</span></button>
+	<h4 class="modal-title" id="myModalLabel">Login to site.com</h4>
+	<div class="modal-body">
+<div class="well">
+<form id="loginfrm" method="POST" action="/login/" novalidate="novalidate">
+	<div class="form-group">
+		<label for="username" class="control-label">username</label>
+		<input type="text" class="form-control" id="username" name="username" value="" required="" title="please enter your username" placeholder="example@gmail.com" > 
+		<span class="help-block"></span>
+	</div>
+	<div class="form-group">
+		<label for="password" class="control-label" >password</label>
+		<input type="password" class="form-control" id="password" name="password" value="" required="" title="please enter your password"> 
+		<span class="help-block"></span>
+	</div>
+	<div id="loginErrorMsg" class="alert alert-error hide">wrong username or password</div>
+	<div class="checkbox">
+		<label>
+<input type="checkbox" name="remember" id="remember"> Remember login
+		</label>
+		<p class="help-block">(if this is a private computer)</p>
+	</div>
+	<button type="submit" class="btn btn-success btn-block">login</button>
+	<a href="/forgot/" class="btn btn-default btn-block">help to login</a></form>
+</div>
+
+	</div>
+	<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

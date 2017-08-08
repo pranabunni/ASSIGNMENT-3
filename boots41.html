@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#b1').click(function(){
+		$('#md1').modal('show');
+	});
+	$('#btn2').click(function(){
+		$('#md1').modal('hide');
+	});
+	$('#btn3').click(function(){
+		$('#md1').modal('hide');
+	});
+	$('#md1').on('show.bs.modal',function(){
+		alert('modal is about to be displayed');
+	});
+	$('#md1').on('shown.bs.modal',function(){
+		alert('modal is displayed');
+	});
+	$('#md1').on('hide.bs.modal',function(){
+		alert('modal is about to be hidden');
+	});
+	$('#md1').on('hidden.bs.modal',function(){
+		alert('modal is hidden');
+	});
+});
+</script>
+</head>
+<body>
+<div class="container">
+
+<div class="row">
+<div class="col-sm-12"><br>
+<button class="btn btn-primary btn-sm pull-right" id="b1">Login</button>
+<div class="modal fade" id="md1" tabindex="-1" data-keyboard="false" data-backdrop="static">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+	<button class="close" id="btn3">&times;</button>
+<h3 class="modal-title">Login</h3>
+</div>
+<div class="modal-body">
+<form>
+<div class="form-group">
+
+<label>Username</label>
+<input type="text" class="form-control">
+</div>
+<div class="form-group">
+
+<label>Password</label>
+<input type="text" class="form-control">
+</div>
+
+</form>
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary">Login</button>
+<button class="btn btn-primary" id="btn2">Close</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div></div>
+</body>
+</html>

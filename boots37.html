@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#btn1').click(function(){
+$('#gallery').collapse('toggle');
+	});
+		$('#btn2').click(function(){
+$('#gallery').collapse('hide');
+	});
+			$('#btn3').click(function(){
+$('#gallery').collapse('show');
+	});
+});
+
+</script>
+<style type="text/css">
+.thumbnail>img {
+    min-width: 338px;
+}
+bootstrap.min.css:5
+.thumbnail a>img, .thumbnail>img {
+    margin-right: auto;
+    margin-left: auto;
+}
+bootstrap.min.css:5
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="row">
+<div class="col-sm-12"><br></div>
+</div>
+<div class="row">
+<div class="panel panel-default">
+
+<div class="panel-heading">
+
+<button type="button" id="btn1" class="btn btn-primary">Toggle Image Gallery</button>
+<button type="button" id="btn2" class="btn btn-primary">Hide Image Gallery</button>
+<button type="button" id="btn3" class="btn btn-primary">Show Image Gallery</button>
+</div>
+<div class="panel-body collapse" id="gallery">
+<div class="col-lg-4">
+
+<a href="img6.jpg" class="thumbnail">
+	<p>Chrysanthemum</p>
+<img src="img6.jpg" class="img-responsive"></a>
+</div>
+<div class="col-lg-4">
+
+<a href="img7.jpg" class="thumbnail">
+	<p>Desert</p>
+<img src="img7.jpg" class="img-responsive"></a>
+</div>
+<div class="col-lg-4">
+
+<a href="img8.jpg" class="thumbnail">
+	<p>Hydrangeas</p>
+<img src="img8.jpg"  class="img-responsive"></a>
+</div>
+
+<!--<div class="col-lg-4">
+<a href="img7.jpg" class="thumbnail">
+	<p>Desert</p>
+	<img src="img7.jpg" class="img-responsive"></a>
+
+</div>
+<div class="col-lg-4">
+<a href="img8.jpg" class="thumbnail">
+	<p>Hydrangeas</p>
+	<img src="img8.jpg" class="img-responsive"></a>
+
+</div>-->
+
+</div>
+</div></div></div>
+</body>
+</html>

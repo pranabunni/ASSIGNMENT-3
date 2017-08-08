@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.btn').popover({
+		delay:200
+	});
+
+})
+</script>
+<body>
+<div class="container">
+
+<div class="row">
+<div class="col-sm-12"><br><br>
+<br>
+<br>
+<button class="btn btn-primary" title="Popover Title" data-content="Popover content.Popover content.Popover content.<br><img src='img1.jpg' class='img-responsive'>" data-html="true"
+ data-trigger="click" data-toggle="popover">Popover Example</button>
+</div>
+</div></div>
+</body>
+</html>
